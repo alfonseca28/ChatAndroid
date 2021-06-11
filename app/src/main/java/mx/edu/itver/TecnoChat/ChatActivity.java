@@ -50,7 +50,7 @@ public class ChatActivity extends AppCompatActivity {
         // Se extraen los parametros de la Ventana Principal
         String direccionIP = intent.getStringExtra(MainActivity.EXTRA_DIP);
         String usuario = intent.getStringExtra(MainActivity.EXTRA_USR);
-        String password = intent.getStringExtra(MainActivity.EXTRA_PAS);
+        String password = intent.getStringExtra(MainActivity.EXTRA_CON);
 
         formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");
 

@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_DIP = "mx.edu.itver.ChatTecno.DIP";
     public final static String EXTRA_USR = "mx.edu.itver.ChatTecno.USR";
-    public final static String EXTRA_PAS = "mx.edu.itver.ChatTecno.PAS";
+    public final static String EXTRA_CON = "mx.edu.itver.ChatTecno.PAS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                 intent.putExtra(EXTRA_DIP, direccionIP);
                 intent.putExtra(EXTRA_USR, usuario);
-                intent.putExtra(EXTRA_PAS, password);
+                intent.putExtra(EXTRA_CON, password);
 
                 startActivity(intent);
             }
