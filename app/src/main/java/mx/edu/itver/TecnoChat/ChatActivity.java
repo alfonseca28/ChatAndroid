@@ -52,7 +52,7 @@ public class ChatActivity extends AppCompatActivity {
         String usuario = intent.getStringExtra(MainActivity.EXTRA_USR);
         String password = intent.getStringExtra(MainActivity.EXTRA_CON);
 
-        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");
+        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");   //Formato que aparece cuando se envia un mensaje, tal y como el día y la hora
 
         listItems = new ArrayList<String>();
 
@@ -184,19 +184,19 @@ public class ChatActivity extends AppCompatActivity {
             if (out != null) {
                 out.println(mensaje);
             } else {
-                alerta("Error", "Sin conexión al servidor " + direccionIP + ". Revise su estado de red y la dirección IP especificada.");
+                alerta("Error", "Sin conexión al servidor " + direccionIP + ". Revisa tu conexión a internet o verifica tu dirección IP.");
             }
         }
 
         void cerrar() {
             try {
-                enviar(usuario + " se ha desconectado");
+                enviar(usuario + " ha salido del servidor.");
                 this.salir = true;
                 clientSocket.close();
                 in.close();
                 out.close();
             } catch (IOException ex) {
-                Log.v("error al cerrar", ex.getMessage());
+                Log.v("error al cerrar.", ex.getMessage());
             }
         }
 
