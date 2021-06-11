@@ -52,7 +52,7 @@ public class ChatActivity extends AppCompatActivity {
         String usuario = intent.getStringExtra(MainActivity.EXTRA_USR);
         String password = intent.getStringExtra(MainActivity.EXTRA_CON);
 
-        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");   //Formato que aparece cuando se envia un mensaje, tal y como el día y la hora
+        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");   //Formato que aparece cuando se envia un mensaje, en este caso es el día y la hora
 
         listItems = new ArrayList<String>();
 
