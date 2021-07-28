@@ -93,7 +93,6 @@ public class ChatActivity extends AppCompatActivity {
                 tareaHiloMensajes.enviar(mensaje); // enviamos el mensaje al servidor
             }
         });
-
     }
 
     void addToList(String respuesta) {
@@ -105,7 +104,6 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         tareaHiloMensajes.cerrar();
-
         super.onBackPressed();
     }
 
@@ -133,7 +131,6 @@ public class ChatActivity extends AppCompatActivity {
         }
 
         public void run() {
-
             try {
                 clientSocket = new Socket(direccionIP, puerto);
 
