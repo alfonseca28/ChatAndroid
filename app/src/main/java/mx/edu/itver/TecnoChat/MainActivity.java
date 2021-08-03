@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(EXTRA_USR, usuario);
                 intent.putExtra(EXTRA_CON, password);
 
-                startActivity(intent);
+                startActivity(intent);  //Se inicia la activity principal de la aplicacion
             }
         });
     }

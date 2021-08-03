@@ -39,7 +39,7 @@ public class ChatActivity extends AppCompatActivity {
 
     final Context context = this;
 
-    SimpleDateFormat formatterMDY;
+    SimpleDateFormat formatterMDY;  //Se agrega el formato para las fechas de los mensajes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class ChatActivity extends AppCompatActivity {
         String usuario = intent.getStringExtra(MainActivity.EXTRA_USR);
         String password = intent.getStringExtra(MainActivity.EXTRA_CON);
 
-        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");   //Formato que aparece cuando se envia un mensaje, en este caso es el día y la hora
+        formatterMDY = new SimpleDateFormat("dd MMMM HH:mm");   //Formato que aparece cuando se envia un mensaje, en este caso solamente es el día y la hora
 
         listItems = new ArrayList<String>();
 
